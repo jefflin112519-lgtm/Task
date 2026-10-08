@@ -1,0 +1,20 @@
+[project]
+name = "langredis"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "langchain-groq>=1.1.3",
+    "langgraph>=1.2.14",
+    "langgraph-checkpoint-redis>=0.5.2",
+    "python-dotenv>=1.2.4",
+    "redis>=8.1.0",
+]
+
+[project.scripts]
+langredis = "langredis:main"
+
+[build-system]
+requires = ["uv_build>=0.12.20,<0.13.0"]
+build-backend = "uv_build"
